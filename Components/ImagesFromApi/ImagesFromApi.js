@@ -35,6 +35,13 @@ export async function paintImages() {
         // Clean previous content
         cleanImages();
 
+        //  container element for the photos (for scalability purposes)
+        const photoContainer = document.createElement("div");
+        photoContainer.classList.add("photo-container");
+
+        // Append the photo container to the app container
+        appContainer.appendChild(photoContainer);
+
         // Loop through each photo and create HTML elements
         photos.forEach(photo => {
             const img = document.createElement("img");
