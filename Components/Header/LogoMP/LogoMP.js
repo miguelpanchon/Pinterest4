@@ -1,12 +1,12 @@
 
-export function paintHeader() {
+export function paintLogo() {
 
     const logoMPElement = document.getElementById("logoMP");
 
     // Create the logo element
     const logo = document.createElement("img");
     logo.src = "././././public/MP_logo.jpg";
-    logo.alt = "Logo MP";
+    logo.alt = "Resetea el valor de búsqueda";
     logo.className = "logo";
 
     // Append the logo to the logoMP element
