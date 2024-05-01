@@ -1,6 +1,6 @@
 import './LogoMP.css';
 
-export function paintLogo(imageSrc, altText, className) {
+export function paintLogo(imageSrc, altText, className, clickHandler) {
     const logoMPElement = document.getElementById("SearchImages");
 
     // Create the logo element
@@ -12,15 +12,14 @@ export function paintLogo(imageSrc, altText, className) {
     // Append the logo to the logoMP element
     logoMPElement.appendChild(logo);
 
-    // Add an onclick event to the logo
-    logo.onclick = function () {
-        logoMP();
-    };
+    // Add an onclick event to the logo using the provided clickHandler callback function
+    logo.onclick = clickHandler;
 
-    // Define the logoMP function
-    function logoMP() {
+    // Define the clickHandler function
+    function logoClickHandler() {
         console.log("Logo was clicked");
-        //xx delete box content ()
-        //xx fetch/paint images ()
+
+        // Additional logic specific to each click handler can be added here
     }
 }
+

@@ -1,20 +1,21 @@
 
 #app {
-    --background-color:     #61777F;
+    /* --background-color:     #61777F; */
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+    border-radius:var(--border-radius);
   }
 
 
 .photo-container {
     background-color: var(--background-color);
     display: flex;
-    flex:row;
+    flex-direction:row;
     flex-wrap: wrap;
+    border-radius:var(--border-radius);
     justify-content: center; /* Align photos horizontally */
     align-items:center; /*align photos vertically  */
-
 }
 
 .photo {
@@ -22,4 +23,5 @@
 /*parece que queda mejor forzando una altura igual a todas */
 height: 20svh;
 margin: 3svw;
+border-radius:var(--border-radius);
 }

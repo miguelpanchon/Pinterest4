@@ -3,9 +3,19 @@
   line-height: 1.5;
   font-weight: 400;
 
+  /* xx pending to explore this option */
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
+  background-color: var(--darkFontColor);
+
+  --foreground-color: #FFFFFF;    ;
+  --background-color:     #61777F;
+  --inputBackColor: yellow;
+  --lightFontColor:white;
+  --darkFontColor:black;
+  --hover-color:#FFFFFF;
+  --no-hover-color:#E0E0E0;
+  --border-radius: 10px;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,15 +40,9 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--darkFontColor);
 
-  --foreground-color: #FFFFFF;    ;
-  --background-color:     #61777F;
-  --inputBackColor: yellow;
-  --lightFontColor:white;
-  --darkFontColor:black;
-  --hover-color:#FFFFFF;
-  --no-hover-color:#E0E0E0;
+
+
 }
 
 h1 {

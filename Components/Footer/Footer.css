@@ -1,11 +1,14 @@
 /* Footer container */
 #footer {
-    color: var(--lightFontColor);
-    padding: 20px;
-    background-color: var(--backgroundColor);
-  }
-  
+    
+    padding: 2px;
+    padding-left: 15px;
+
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
   /* List styling */
+
+}
   ul {
     list-style-type: none;
     padding: 0;

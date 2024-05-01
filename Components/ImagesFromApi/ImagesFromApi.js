@@ -13,7 +13,6 @@ export async function searchImages(photoQuery, page, apiKeyParam) {
     const response = await fetch(url);
     const data = await response.json();
     const photos = data.results;
-    console.log(photos);
     return photos;
 }
 
@@ -35,6 +34,10 @@ export async function paintImages() {
 
         // Loop through each photo and create HTML elements
         photos.forEach(photo => {
+            //xx se puede quitar. output description in console to check everything ok
+            console.log(
+                `Description: ${photo.description ? photo.description.substring(0, photo.description.length) : "No description"}`)
+
             // Create an anchor element
             const link = document.createElement("a");
             link.href = photo.links.html; // Set the URL of the webpage associated with the image
