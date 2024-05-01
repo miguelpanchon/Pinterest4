@@ -1,8 +1,25 @@
 
 #app {
-    background-color: lightblue;
-    
+    --background-color:     #61777F;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
 
+
+.photo-container {
+    background-color: var(--background-color);
+    display: flex;
+    flex:row;
+    flex-wrap: wrap;
+    justify-content: center; /* Align photos horizontally */
+    align-items:center; /*align photos vertically  */
 
 }
-   
+
+.photo {
+/* width: 20svw; */
+/*parece que queda mejor forzando una altura igual a todas */
+height: 20svh;
+margin: 3svw;
+}

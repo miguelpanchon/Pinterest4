@@ -5,8 +5,10 @@ import { paintSearchImages } from './SearchImages/SearchImages';
 
 export function paintHeader() {
 
+
+    paintLogo("././././public/Unsplash.jpg", "Logotipo de esta página web", 'logo');
     paintSearchImages();
-    paintLogo();
+    paintLogo("././././public/MP_logo.jpg", "Resetea el valor de búsqueda", 'reset');
 
 
 

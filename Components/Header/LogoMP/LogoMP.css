@@ -1,8 +1,33 @@
 
- #logoMP {
-  /* xx sacarlo de estilos y ponerlo aqui */  
-} 
+.logo{
+  /* --background-color:     #61777F; */
+  background-color: var(--background-color);
+  width:9svw;
+  height: auto;
+  margin:2px;
+  padding:0;
+}
 
 
+
+.reset{
+  background-color: var(--background-color);
+  width:3svw;
+  padding: 1em;
+  margin: 5px;
+  border-radius: 5px; 
+}
+
+/* dynamic behaviour of reset */
+.reset {
+  will-change: filter;
+  transition: filter 300ms;
+}
+.reset:hover {
+  filter: drop-shadow(0 0 2em black);
+}
+.reset.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
 
 

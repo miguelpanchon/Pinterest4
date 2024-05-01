@@ -1,13 +1,13 @@
+import './LogoMP.css';
 
-export function paintLogo() {
-
-    const logoMPElement = document.getElementById("logoMP");
+export function paintLogo(imageSrc, altText, className) {
+    const logoMPElement = document.getElementById("SearchImages");
 
     // Create the logo element
     const logo = document.createElement("img");
-    logo.src = "././././public/MP_logo.jpg";
-    logo.alt = "Resetea el valor de búsqueda";
-    logo.className = "logo";
+    logo.src = imageSrc; // Set the src attribute to the provided image source
+    logo.alt = altText; // Set the alt attribute to the provided alt text
+    logo.className = className; // Set the class name to the provided class name
 
     // Append the logo to the logoMP element
     logoMPElement.appendChild(logo);
@@ -23,5 +23,4 @@ export function paintLogo() {
         //xx delete box content ()
         //xx fetch/paint images ()
     }
-
 }

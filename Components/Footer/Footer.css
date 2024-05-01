@@ -1,6 +1,28 @@
+/* Footer container */
 #footer {
-
-    background-color: #61777F;
+    color: var(--lightFontColor);
+    padding: 20px;
+    background-color: var(--backgroundColor);
+  }
+  
+  /* List styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Link styling */
+  ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  ul li a {
     color: white;
-    
-}
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  

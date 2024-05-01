@@ -2,8 +2,6 @@ import './SearchImages.css'
 
 export function paintSearchImages() {
 
-    //quitar luego xx
-    console.log("entra en paintSearchImages() ")
 
     // Get the SearchImages element
     const searchImages = document.getElementById("SearchImages");
